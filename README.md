@@ -1,6 +1,6 @@
 # Docker for Bitcoin Core
 
-This project aims to enable more automation around running a bitcoin node.
+This project offer a packaging alternative using docker to enable more automation around Bitcoin Core.
 
 ## Pre-Requisites
 
@@ -14,8 +14,8 @@ Make sure you have docker and docker-compose [installed](https://docs.docker.com
 
 ```bash
 # setup environment
-git clone --branch 0xawaz_docker --single-branch git@github.com:0xawaz/bitcoin.git
-cd bitcoin/contrib/docker
+git clone git@github.com:0xawaz/bitcoin-docker.git
+cd bitcoin-docker
 ./scripts/setup-env.sh
 
 # populate env vars

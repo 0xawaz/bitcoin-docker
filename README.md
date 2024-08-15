@@ -22,10 +22,10 @@ cd bitcoin-docker
 source .env
 
 # build bitcoin-core docker image
-docker build -t 0xawaz/bitcoin-core:$VERSION .
+docker build -t 0xawaz/bitcoin:$VERSION .
 
 # run and test my bitcoin-core container
-docker run --platform linux/amd64 --rm -it 0xawaz/bitcoin-core:$VERSION /btc/bin/bitcoind -version
+docker run --platform linux/amd64 --rm -it 0xawaz/bitcoin:$VERSION /btc/bin/bitcoind -version
 ```
 
 ### Docker Compose
